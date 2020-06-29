@@ -5,6 +5,10 @@
     height: 496px;
 }
 
+ul {
+    list-style: none;
+}
+
 li {
     background-color: #ccc !important;
     width: 60px;
