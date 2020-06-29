@@ -1,0 +1,100 @@
+.main {
+    display: flex;
+    padding: 50px;
+}
+
+.inner_field {
+    background-color: #ccc;
+    width: 610px;
+    height: 489px;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.row {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+.column {
+    width: 60px;
+    height: 60px;
+    border-right: 1px solid black;
+}
+
+.outside_field {
+    margin-left: 100px;
+    background-color: green;
+    width: 610px;
+    height: 485px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mark1 {
+    background: url("/IMG/1.png") no-repeat;
+    background-size: cover;
+}
+
+.mark2 {
+    background: url("/IMG/2.png");
+    background-size: cover;
+}
+
+.mark3 {
+    background: url("/IMG/3.png");
+    background-size: cover;
+}
+
+.mark4 {
+    background: url("/IMG/4.png");
+    background-size: cover;
+}
+
+.mark5 {
+    background: url("/IMG/5.png");
+    background-size: cover;
+}
+
+.mark6 {
+    background: url("/IMG/6.png");
+    background-size: cover;
+}
+
+.mark7 {
+    background: url("/IMG/7.png");
+    background-size: cover;
+}
+
+.mark8 {
+    background: url("/IMG/8.png");
+    background-size: cover;
+}
+
+.mark9 {
+    background: url("/IMG/9.png");
+    background-size: cover;
+}
+
+.mark10 {
+    background: url("/IMG/10.png");
+    background-size: cover;
+}
+
+.mark11 {
+    background: url("/IMG/11.png");
+    background-size: cover;
+}
+
+.mark12 {
+    background: url("/IMG/12.png");
+    background-size: cover;
+}
+
+.gamepad {}
