@@ -1,0 +1,73 @@
+#sortable {
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+    height: 496px;
+}
+
+li {
+    background-color: #ccc !important;
+    width: 60px;
+    height: 60px;
+    border: 2px solid black !important;
+}
+
+.mark1 {
+    background: url("/IMG/1.png") no-repeat;
+    background-size: cover;
+}
+
+.mark2 {
+    background: url("/IMG/2.png");
+    background-size: cover;
+}
+
+.mark3 {
+    background: url("/IMG/3.png");
+    background-size: cover;
+}
+
+.mark4 {
+    background: url("/IMG/4.png");
+    background-size: cover;
+}
+
+.mark5 {
+    background: url("/IMG/5.png");
+    background-size: cover;
+}
+
+.mark6 {
+    background: url("/IMG/6.png");
+    background-size: cover;
+}
+
+.mark7 {
+    background: url("/IMG/7.png");
+    background-size: cover;
+}
+
+.mark8 {
+    background: url("/IMG/8.png");
+    background-size: cover;
+}
+
+.mark9 {
+    background: url("/IMG/9.png");
+    background-size: cover;
+}
+
+.mark10 {
+    background: url("/IMG/10.png");
+    background-size: cover;
+}
+
+.mark11 {
+    background: url("/IMG/11.png");
+    background-size: cover;
+}
+
+.mark12 {
+    background: url("/IMG/12.png");
+    background-size: cover;
+}
