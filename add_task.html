@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="add_task.css">
+    <link rel="stylesheet" type="text/css" href="common.css">
+    <title></title>
+</head>
+
+<body>
+    <div class="nav_menu">
+        <a href="performance.html">
+            <div class="marks">Успеваемость</div>
+        </a>
+        <a href="main.html">
+            <div class="marks">Назад</div>
+        </a>
+    </div>
+    <div class="main">
+        <div class="capture">СОЗДАНИЕ ЗАДАНИЯ</div>
+        <form>
+            <div class="task">
+                <div>
+                    <label for="description">Описание</label>
+                    <textarea id="description" rows="20" cols="50"></textarea>
+                </div>
+                <div>
+                    <label for="inpData">Входные данные</label>
+                    <textarea id="inpData" rows="20" cols="50"></textarea>
+                    <div>
+                        <input id="uploadFile" type="file" />
+                        <label class="uploadFile" for="uploadFile">Загрузить файл</label>
+                    </div>
+                </div>
+                <div>
+                    <label for="outData">Выходные данные</label>
+                    <textarea id="outData" rows="20" cols="50"></textarea>
+                </div>
+                <label></label>
+            </div>
+            <button type="submit">ОТПРАВИТЬ</button>
+        </form>
+    </div>
+</body>
+
+</html>

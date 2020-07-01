@@ -1,6 +1,6 @@
 "use strict"
 
-let imgLabel = '<img class="image" src=../image/img$n.png />'
+let imgLabel = '<img class="image" src=img$n.png />'
 
 let board1 = document.querySelector(".board1");
 let board2 = document.querySelector(".board2");
@@ -57,21 +57,21 @@ function setLabels() {
         let div = document.createElement("div");
         div.id = "label" + n;
         div.className = "label";
-        div.style.backgroundImage = `url(image/img${n}.png`;
+        div.style.backgroundImage = `url(img${n}.png`;
 
-        div.innerHTML = `<img class="image" id=img${n} src=../image/img${n}.png data-key=../svg/img${n}.svg />`;
+        div.innerHTML = `<img class="image" id=img${n} src=img${n}.png data-key=img${n}.svg />`;
 
         bar.append(div);
     }
 }
 
 function moveLabel(fromCoord, toCoord, label) {
-    let figure = `<img class="image" src=../image/${label}.png data-key=../svg/${label}.svg />`;
+    let figure = `<img class="image" src=${label}.png data-key=${label}.svg />`;
 
     showLabelAt(fromCoord, "");
     showLabelAt(toCoord, figure);
 
-    let svg = `<img class="image" src=../svg/${label}.svg />`;
+    let svg = `<img class="image" src=${label}.svg />`;
 
     mirror(toCoord, svg);
 }
