@@ -1,0 +1,72 @@
+ul {
+    list-style: none;
+    border: 2px solid gray;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+li {
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.general {
+    margin: auto;
+}
+
+.user {
+    width: 250px;
+}
+
+.tries {
+    width: 185px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.result {
+    text-align: center;
+}
+
+h3,
+.mark {
+    text-transform: uppercase;
+}
+
+.mark {
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 20px;
+    width: 150px;
+}
+
+.passed {
+    background-color: rgba(76, 175, 80, 0.8);
+}
+
+.not_passed {
+    background-color: rgba(230, 50, 0, 0.8);
+}
+
+.home {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 0;
+    margin-left: 100px !important;
+}
+
+.button-group {
+    margin-left: auto;
+    display: flex;
+}
+
+.capture_mark:active,
+.capture_mark:hover {
+    background-color: transparent;
+    color: #000;
+}
