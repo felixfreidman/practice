@@ -1,6 +1,6 @@
 "use strict"
 
-let imgLabel = '<img class="image" src=image/img$n.png />'
+let imgLabel = '<img class="image" src=../image/img$n.png />'
 
 let board1 = document.querySelector(".board1");
 let board2 = document.querySelector(".board2");
@@ -14,11 +14,11 @@ setDraggable();
 setDroppable();
 
 
-document.ondblclick = (event)=> {
+document.ondblclick = (event) => {
     if (event.path[1].id.includes('1.')) {
         let position = +event.path[1].id.substring(2);
 
-        let newPos = 8*(Math.trunc(position / 8) + 1) - 1 - position % 8;
+        let newPos = 8 * (Math.trunc(position / 8) + 1) - 1 - position % 8;
 
         document.getElementById(`1.${position}`).innerHTML = "";
         document.getElementById(`2.${newPos}`).innerHTML = "";
@@ -31,7 +31,7 @@ function setDraggable() {
 
 function setDroppable() {
     $(".square").droppable({
-        drop: (event, ui)=> {
+        drop: (event, ui) => {
             let from = ui.draggable.context.id;
             let to = event.target.id;
 
@@ -53,25 +53,25 @@ function setSquares(parent, board) {
 function setLabels() {
     let bar = document.querySelector(".bar");
 
-    for (let n=1; n <=12; n++) {
+    for (let n = 1; n <= 12; n++) {
         let div = document.createElement("div");
         div.id = "label" + n;
         div.className = "label";
         div.style.backgroundImage = `url(image/img${n}.png`;
 
-        div.innerHTML = `<img class="image" id=img${n} src=image/img${n}.png data-key=svg/img${n}.svg />`;
+        div.innerHTML = `<img class="image" id=img${n} src=../image/img${n}.png data-key=../svg/img${n}.svg />`;
 
         bar.append(div);
     }
 }
 
 function moveLabel(fromCoord, toCoord, label) {
-    let figure = `<img class="image" src=image/${label}.png data-key=svg/${label}.svg />`;
+    let figure = `<img class="image" src=../image/${label}.png data-key=../svg/${label}.svg />`;
 
     showLabelAt(fromCoord, "");
     showLabelAt(toCoord, figure);
 
-    let svg = `<img class="image" src=svg/${label}.svg />`;
+    let svg = `<img class="image" src=../svg/${label}.svg />`;
 
     mirror(toCoord, svg);
 }
@@ -84,7 +84,7 @@ function showLabelAt(coord, label) {
 
 function mirror(toCoord, file) {
     let position = +(toCoord.substring(2));
-    position = 8*(Math.trunc(position / 8) + 1) - 1 - position % 8;
+    position = 8 * (Math.trunc(position / 8) + 1) - 1 - position % 8;
 
     document.getElementById(`2.${position}`).innerHTML = file;
 }
