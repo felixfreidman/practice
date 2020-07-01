@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index page</title>
+    <link rel="stylesheet" href="/CSS/root.css">
+    <link rel="stylesheet" href="/CSS/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="index.html"><img src="/image/logo.svg" alt="" class="nav_logo"></a>
+        </div>
+        <div class="main">
+            <div class="pupil-form">
+                <h3 class="header">Ученик</h3>
+                <form action="POST">
+                    <input type="text" id="name-pup" placeholder="Имя">
+                    <input type="password" id="password-pup" placeholder="Пароль">
+                </form>
+                <a href="/HTML/pupil-index.html">
+                    <div class="button">
+                        <span class="pupil-but">Войти как ученик</span>
+                    </div>
+                </a>
+            </div>
+            <div class="tutor-form">
+                <h3 class="header">Учитель</h3>
+                <form action="POST">
+                    <input type="text" id="name-tut" placeholder="Имя">
+                    <input type="password" id="password-tut" placeholder="Пароль">
+                </form>
+                <a href="/HTML/tutor-index.html">
+                    <div class="button">
+                        <span class="tutor-but">Войти как учитель</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
