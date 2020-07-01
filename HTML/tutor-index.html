@@ -29,7 +29,7 @@
         </div>
         <div class="main">
             <div class="capture">СПИСОК ЗАДАНИЙ</div>
-            <ul>
+            <ul class="" id="ulToHide">
                 <li class="capture_field">
                     <div class="name">
                         <h3>Название задания</h3>
@@ -43,7 +43,7 @@
                 </li>
                 <li id="first">
                     <div class="name general">Задание 1</div>
-                    <div class="date general">19.02.2019</div>
+                    <div class="date general">2019-02-19</div>
                     <div class="readiness">
                         <div class="ready mark">Выполнено</div>
                     </div>
@@ -58,7 +58,7 @@
                 </li>
                 <li id="second">
                     <div class="name general">Задание 2</div>
-                    <div class="date general">20.01.2020</div>
+                    <div class="date general">2020-20-01</div>
                     <div class="readiness">
                         <div class="ready mark">Выполнено</div>
                     </div>
@@ -72,7 +72,7 @@
                 </li>
                 <li id="third">
                     <div class="name general">Задание 3</div>
-                    <div class="date general">15.03.2019</div>
+                    <div class="date general">2019-03-15</div>
                     <div class="readiness">
                         <div class="received_response mark">Получен ответ</div>
                     </div>
@@ -86,7 +86,7 @@
                 </li>
                 <li id="fourth">
                     <div class="name general">Задание 4</div>
-                    <div class="date general">10.01.2020</div>
+                    <div class="date general">2020-01-10</div>
                     <div class="readiness">
                         <div class="not_ready mark">Не выполнено</div>
                     </div>
@@ -99,6 +99,25 @@
                     </div>
                 </li>
             </ul>
+            <div class="adding_form hide">
+                <div class="closingButton">
+                    <button data-id="first" class="close">
+                        <span class="cross first-line"></span>
+                        <span class="cross second-line"></span>
+                    </button>
+                </div>
+                <input type="text" id="task_name" value="" name="taskName" placeholder="Имя задания">
+                <input type="date" id="task_date" value="" name="taskDate" placeholder="Дата задания">
+                <div class="mark_status">
+                    <input type="radio" id="readyMark" name="mark" value="ready" checked>
+                    <label for="readyMark">Готово</label>
+                    <input type="radio" id="responseMark" name="mark" value="response">
+                    <label for="readyMark">Получен ответ</label>
+                    <input type="radio" id="notreadyMark" name="mark" value="notready">
+                    <label for="notreadyMark">Не готово</label>
+                </div>
+                <div class="addTaskButton">ДОБАВИТЬ</div>
+            </div>
         </div>
     </div>
     <script type="text/javascript" src="../Scripts/list_script.js"></script>
