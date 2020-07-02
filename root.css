@@ -108,7 +108,8 @@ form>input,
     color: #4285f4;
 }
 
-input {
+input,
+button {
     outline: none;
 }
 
