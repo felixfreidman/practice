@@ -9,6 +9,9 @@ label {
 textarea {
     margin-top: 30px;
     resize: none;
+    outline: none;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
 form {
