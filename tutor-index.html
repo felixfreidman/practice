@@ -47,7 +47,9 @@
                     <div class="readiness">
                         <div class="ready mark">Выполнено</div>
                     </div>
-                    <div class="change general"><a href="change_task.html"><span>Изменить</span></a></div>
+                    <div class="change general">
+                        Изменить
+                    </div>
                     <div>
                         <button data-id="first" class="delete">
                             <span class="cross first-line"></span>
@@ -62,7 +64,7 @@
                     <div class="readiness">
                         <div class="ready mark">Выполнено</div>
                     </div>
-                    <div class="change general"><a href="change_task.html">Изменить</a></div>
+                    <div class="change general">Изменить</div>
                     <div>
                         <button data-id="second" class="delete">
                             <span class="cross first-line"></span>
@@ -76,7 +78,7 @@
                     <div class="readiness">
                         <div class="received_response mark">Получен ответ</div>
                     </div>
-                    <div class="change general"><a href="change_task.html">Изменить</a></div>
+                    <div class="change general">Изменить</div>
                     <div>
                         <button data-id="third" class="delete">
                             <span class="cross first-line"></span>
@@ -90,7 +92,7 @@
                     <div class="readiness">
                         <div class="not_ready mark">Не выполнено</div>
                     </div>
-                    <div class="change general"><a href="change_task.html">Изменить</a></div>
+                    <div class="change general">Изменить</div>
                     <div>
                         <button data-id="fourth" class="delete">
                             <span class="cross first-line"></span>
@@ -118,9 +120,32 @@
                 </div>
                 <div class="addTaskButton">ДОБАВИТЬ</div>
             </div>
+
+            <div class="change_form hide">
+                <div class="close_btn">
+                    <button data-id="first" class="close">
+                        <span class="cross first-line"></span>
+                        <span class="cross second-line"></span>
+                    </button>
+                </div>
+                <div class="flex_change">
+                    <label for="description">Описание</label>
+                    <textarea id="description"></textarea>
+                </div>
+                <div class="flex_change">
+                    <label for="inpData">Входные данные</label>
+                    <textarea id="inpData"></textarea>
+                </div>
+                <div class="flex_change">
+                    <label for="outData">Выходные</label>
+                    <textarea id="outData"></textarea>
+                </div>
+                <div class="flex_change-btn">
+                    <input type="submit" id="change" class="change_btn" value="ИЗМЕНИТЬ" />
+                </div>
+            </div>
         </div>
-    </div>
-    <script type="text/javascript" src="list_script.js"></script>
+        <script type="text/javascript" src="list_script.js"></script>
 </body>
 
 </html>

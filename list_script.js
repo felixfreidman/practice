@@ -10,13 +10,15 @@ const capture = document.querySelector(".capture");
 const unorderedList = document.getElementById("ulToHide");
 const addingForm = document.querySelector(".adding_form");
 const closingButton = document.querySelector(".closingButton");
+const closeButton = document.querySelector(".close_btn");
 const addTaskButton = document.querySelector(".addTaskButton");
 const nameTask = document.getElementById("task_name");
 const dateTask = document.getElementById("task_date");
 const mark = document.querySelectorAll('input[type="radio"]');
 const readyMark = document.getElementById("readyMark");
 const notreadyMark = document.getElementById("notreadyMark");
-
+const changeLink = document.querySelectorAll(".change");
+const changingForm = document.querySelector(".change_form");
 
 addButton.addEventListener('click', () => {
     capture.classList.toggle('hide');
@@ -67,4 +69,19 @@ addTaskButton.addEventListener("click", () => {
     capture.classList.toggle('hide');
     unorderedList.classList.toggle('hide');
     addingForm.classList.toggle('hide');
+});
+for (let i = 0; i < changeLink.length; i++) {
+    changeLink[i].addEventListener('click', (event) => {
+        console.log(event.target);
+        capture.classList.toggle('hide');
+        unorderedList.classList.toggle('hide');
+        changingForm.classList.toggle('hide');
+    });
+}
+
+
+closeButton.addEventListener('click', () => {
+    capture.classList.toggle('hide');
+    unorderedList.classList.toggle('hide');
+    changingForm.classList.toggle('hide');
 });
